@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="item_number_text_size">23sp</dimen>
+    <dimen name="text_size_16">14sp</dimen>
+    <dimen name="text_size_24">16sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="text_size_18">12sp</dimen>
+    <dimen name="text_size_20">18sp</dimen>
+    <dimen name="warning_size">31sp</dimen>
+
+    <dimen name="width">480dp</dimen>
+    <dimen name="height">480dp</dimen>
+    <dimen name="item_height_size">88dp</dimen>
+    <dimen name="item_margin_vertical_top">16dp</dimen>
+
+
+    <dimen name="body_padding_start">18dp</dimen>
+    <dimen name="body_padding_end">22dp</dimen>
+
+
+    <dimen name="item_number_align_top">5dp</dimen>
+    <dimen name="item_number_align_start">24dp</dimen>
+    <dimen name="item_string_align_top">36dp</dimen>
+    <dimen name="item_string_align_start">24dp</dimen>
+    <dimen name="item_string_align_bottom">5dp</dimen>
+    <dimen name="item_switch_align_end">24dp</dimen>
+    <dimen name="item_switch_width_size">50dp</dimen>
+    <dimen name="item_switch_height_size">22dp</dimen>
+    <dimen name="item_switch_radius_size">15dp</dimen>
+    <dimen name="item_radius">8dp</dimen>
+    <dimen name="dialog_radius">12dp</dimen>
+
+    <dimen name="action_bar_height_size">52dp</dimen>
+    <dimen name="action_bar_button_width">30dp</dimen>
+    <dimen name="action_bar_button_height">30dp</dimen>
+    <dimen name="action_bar_button_margin_top">39dp</dimen>
+    <dimen name="action_bar_button_margin_start">15dp</dimen>
+    <dimen name="action_bar_button_margin_end">15dp</dimen>
+    <dimen name="action_bar_text_size">20sp</dimen>
+
+    <dimen name="create_clock_body_margin_start_end">15dp</dimen>
+    <dimen name="create_clock_body_margin_top">14dp</dimen>
+    <dimen name="create_clock_switch_margin">20dp</dimen>
+
+
+    <dimen name="picker_width">440dp</dimen>
+    <dimen name="picker_height">230dp</dimen>
+    <dimen name="size_20">10dp</dimen>
+</resources>

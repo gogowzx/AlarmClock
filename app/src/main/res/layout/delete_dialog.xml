@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="225dp"
+    android:background="@drawable/item_shape"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sure_to_delete"
+        android:textSize="@dimen/text_size_20"
+        android:textColor="@color/action_bar_title_text_color"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="45dp">
+        <Button
+            android:id="@+id/delete_delete"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="@string/cancel"
+            android:textSize="@dimen/text_size_20"
+            android:textColor="@color/white"
+            android:background="@drawable/delete_button"
+            android:layout_marginStart="53dp"/>
+        <Button
+            android:id="@+id/delete_back"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="@string/sure"
+            android:textSize="@dimen/text_size_20"
+            android:textColor="@color/white"
+            android:background="@drawable/complete_button"
+            android:layout_marginStart="48dp"/>
+    </LinearLayout>
+
+</LinearLayout>

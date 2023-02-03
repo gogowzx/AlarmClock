@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="69dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="blocksDescendants"
+    android:id="@+id/item"
+    android:background="@drawable/item_shape">
+
+        <TextView
+            android:id="@+id/item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_number_align_start"
+            android:layout_marginTop="@dimen/item_number_align_top"
+            android:text="16:90"
+            android:textColor="@color/color_1"
+            android:textSize="@dimen/item_number_text_size" />
+
+        <TextView
+            android:id="@+id/item_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_time"
+            android:layout_marginStart="@dimen/item_string_align_start"
+            android:layout_marginBottom="@dimen/item_string_align_bottom"
+            android:text="周一"
+            android:textColor="@color/color_2"
+            android:textSize="@dimen/text_size_18" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_state"
+            android:layout_width="50dp"
+            android:layout_height="@dimen/item_switch_height_size"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/item_switch_align_end"
+            android:thumb="@drawable/thumb_selector"
+            app:track="@drawable/track_selector" />
+</RelativeLayout>

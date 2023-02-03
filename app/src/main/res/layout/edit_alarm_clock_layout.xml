@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditAlarmClock">
+    <!--android:background="@mipmap/bj"-->
+
+    <include layout="@layout/action_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/create_clock_body_margin_start_end"
+        android:layout_marginEnd="@dimen/create_clock_body_margin_start_end"
+        android:layout_marginTop="@dimen/create_clock_body_margin_top"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="179dp"
+            android:background="@drawable/item_shape"
+            android:paddingStart="@dimen/size_20"
+            android:paddingEnd="@dimen/size_20">
+
+            <com.boll.alarmclock.picker.NumberWheelView
+                android:id="@+id/hours"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:wheel_itemTextSize="19sp"
+                app:wheel_itemTextSizeSelected="22sp"
+                app:wheel_indicatorEnabled="true"
+                app:wheel_curvedEnabled="true"
+                app:wheel_curvedIndicatorSpace="4dp"
+                app:wheel_curvedMaxAngle="60"
+                app:wheel_indicatorColor="@color/color_3"
+                app:wheel_itemTextColorSelected="@color/color_4"
+                app:wheel_itemTextColor="@color/color_1"
+                app:wheel_cyclicEnabled="true" />
+
+            <com.boll.alarmclock.picker.NumberWheelView
+                android:id="@+id/minutes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:wheel_itemTextSize="19sp"
+                app:wheel_itemTextSizeSelected="22sp"
+                app:wheel_indicatorEnabled="true"
+                app:wheel_curvedEnabled="true"
+                app:wheel_curvedIndicatorSpace="4dp"
+                app:wheel_curvedMaxAngle="60"
+                app:wheel_indicatorColor="@color/color_3"
+                app:wheel_itemTextColorSelected="@color/color_4"
+                app:wheel_itemTextColor="@color/color_1"
+                app:wheel_cyclicEnabled="true"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/set_repeat"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/item_shape">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="25dp"
+                android:text="@string/edit_clock_repeat"
+                android:textColor="@color/action_bar_title_text_color"
+                android:textSize="@dimen/text_size_18" />
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="6dp"
+                android:layout_height="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="26dp"
+                android:src="@drawable/right" />
+            <TextView
+                android:id="@+id/repeat_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/iv"
+                android:textSize="@dimen/text_size_16"
+                android:layout_marginEnd="15dp"
+                android:textColor="#1677FF"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/edit_clock_layout_one"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        >
+        <Button
+            android:id="@+id/edit_clock_delete"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="@string/delete"
+            android:layout_marginStart="160dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/delete_button"
+            android:textColor="@color/red"/>
+        <Button
+            android:id="@+id/edit_clock_complete"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="确定"
+            android:layout_marginStart="130dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/complete_button"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/add_clock_layout_two"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        >
+
+        <Button
+            android:id="@+id/add_clock_complete"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="270dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/complete_button"
+            android:text="@string/complete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="WheelStyle" format="reference" />
+
+    <attr name="wheel_itemTextSize" format="dimension|reference" />
+    <attr name="wheel_itemTextSizeSelected" format="dimension|reference" />
+    <attr name="wheel_itemTextColor" format="color|reference" />
+    <attr name="wheel_itemTextColorSelected" format="color|reference" />
+    <attr name="wheel_itemTextBoldSelected" format="boolean|reference" />
+    <attr name="wheel_itemSpace" format="dimension|reference" />
+    <attr name="wheel_itemTextAlign" format="enum">
+        <enum name="center" value="0" />
+        <enum name="left" value="1" />
+        <enum name="right" value="2" />
+    </attr>
+    <attr name="wheel_visibleItemCount" format="integer|reference" />
+    <attr name="wheel_sameWidthEnabled" format="boolean|reference" />
+    <attr name="wheel_maxWidthText" format="string|reference" />
+    <attr name="wheel_cyclicEnabled" format="boolean|reference" />
+    <attr name="wheel_indicatorEnabled" format="boolean|reference" />
+    <attr name="wheel_indicatorColor" format="color|reference" />
+    <attr name="wheel_indicatorSize" format="dimension|reference" />
+    <attr name="wheel_curtainEnabled" format="boolean|reference" />
+    <attr name="wheel_curtainColor" format="color|reference" />
+    <attr name="wheel_curtainCorner" format="enum">
+        <enum name="none" value="0" />
+        <enum name="all" value="1" />
+        <enum name="top" value="2" />
+        <enum name="bottom" value="3" />
+        <enum name="left" value="4" />
+        <enum name="right" value="5" />
+    </attr>
+    <attr name="wheel_curtainRadius" format="dimension|reference" />
+    <attr name="wheel_atmosphericEnabled" format="boolean|reference" />
+    <attr name="wheel_curvedEnabled" format="boolean|reference" />
+    <attr name="wheel_curvedMaxAngle" format="integer|reference" />
+    <attr name="wheel_curvedIndicatorSpace" format="dimension|reference" />
+
+    <declare-styleable name="WheelView">
+        <attr name="wheel_visibleItemCount" />     //显示item的数量
+        <attr name="wheel_itemTextSize" />
+        <attr name="wheel_itemTextSizeSelected" />
+        <attr name="wheel_itemTextColor" />
+        <attr name="wheel_itemTextColorSelected" />
+        <attr name="wheel_itemTextBoldSelected" />
+        <attr name="wheel_itemSpace" />            //子item的高
+        <attr name="wheel_itemTextAlign" />        //文字的对齐方式
+        <attr name="wheel_sameWidthEnabled" />      //未知
+        <attr name="wheel_maxWidthText" />          //未知
+        <attr name="wheel_cyclicEnabled" />        //数据循环
+        <attr name="wheel_indicatorEnabled" />     //是否有杠
+        <attr name="wheel_indicatorColor" />       //上下两杠的颜色
+        <attr name="wheel_indicatorSize" />        //杠的厚度
+        <attr name="wheel_curtainEnabled" />       //是否有幕布/item背景
+        <attr name="wheel_curtainColor" />         //颜色
+        <attr name="wheel_curtainCorner" />         //幕布角（哪个角）
+        <attr name="wheel_curtainRadius" />         //幕布弯曲半径
+        <attr name="wheel_atmosphericEnabled" />    //是否会多显示出半个item
+        <attr name="wheel_curvedEnabled" />         //能否弯曲
+        <attr name="wheel_curvedMaxAngle" />        //弯曲角度
+        <attr name="wheel_curvedIndicatorSpace" />  //弯曲标志高，可能会出现夸显示出多个item
+    </declare-styleable>
+</resources>
